@@ -10,14 +10,14 @@
  */
 const twoSums = (arr, base) => {
   for (i = 0; i < arr.length; i++) {
-    let sum = [];
-    let temp1 = arr[i];
-    sum.push(arr[i]);
-    for (y = 0; i < arr.length; i++) {
-      if (temp1 + arr[y] == base) return sum.push(arr[y]);
+    let sum = [arr[i]];
+    for (y = 0; y < arr.length; y++) {
+      if (sum[0] + arr[y] == base) {
+        sum.push(arr[y]);
+      return sum.push(arr[y]);
+      }
     }
   }
-  sum = [];
 };
 
 export default twoSums;
