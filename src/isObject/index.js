@@ -8,7 +8,8 @@
  * isObject(null); // false
  */
 const isObject = data => {
-  if(typeof data == "object") return true;
+  if(typeof data == "object" && String(data) !== "null") return true;
+  return false;
 };
 
 export default isObject;
