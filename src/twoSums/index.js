@@ -14,7 +14,7 @@ const twoSums = (arr, base) => {
     for (y = 0; y < arr.length; y++) {
       if (sum[0] + arr[y] == base) {
         sum.push(arr[y]);
-      return sum.push(arr[y]);
+      return sum;
       }
     }
   }
